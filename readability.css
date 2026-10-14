@@ -1,0 +1,52 @@
+/* Ajustes de lectura: texto más amplio sin cambiar la estructura. */
+body{font-size:17px}
+.topbar{font-size:13px}
+nav{font-size:15px;gap:20px}
+.brand{font-size:22px}
+.brand small{font-size:10px;letter-spacing:2px}
+.button{font-size:15px;padding:16px 25px}
+.button.small{font-size:13px}
+.eyebrow{font-size:12px}
+.hero p:not(.eyebrow){font-size:18px;line-height:1.8}
+.hero-link{font-size:15px}
+.hero-note{font-size:10px}
+.hero-photo{object-position:72% center}
+.hero-photo{opacity:1}
+.hero:after{background:linear-gradient(90deg,rgba(9,26,40,.92) 0%,rgba(9,26,40,.76) 34%,rgba(9,26,40,.16) 67%,rgba(9,26,40,.03))}
+.section-head>p,.service-card p,.detail-card p,.detail-content p{font-size:16px}
+.service-no{font-size:12px}
+.text-link,.whatsapp-service{font-size:15px}
+.about-grid p:not(.eyebrow){font-size:17px}
+.process li p,.values p,.empty-events p{font-size:16px}
+.process li h3{font-size:24px}
+.page-banner p:not(.eyebrow),.area-description{font-size:17px}
+.detail-content h3{font-size:19px}
+.event-content .eyebrow{font-size:11px}
+.event-content>p:last-child{font-size:16px}
+.contact-top>a{font-size:16px}
+.contact-map-column h2{font-size:19px}
+.contact-map-column address{font-size:16px}
+.address-landmark{font-size:14px}
+.contact-clean-form input,.contact-clean-form textarea{font-size:16px}
+.contact-clean-form .send-note{font-size:13px!important}
+.services-intro p{font-size:17px}
+.section-path,.breadcrumb{font-size:14px!important}
+.footer-grid h2{font-size:15px}
+.footer-grid p,.footer-grid>div>a:not(.brand){font-size:14px}
+.footer-bottom{font-size:12px}
+.floating-chat{font-size:13px}
+@media(max-width:1100px){.brand{font-size:20px}nav{gap:14px;font-size:14px}}
+@media(max-width:760px){
+ .brand{font-size:19px}.brand small{font-size:9px}
+ .topbar .wrap>div{font-size:13px}
+ nav>a{font-size:16px}
+ .hero p:not(.eyebrow){font-size:17px}
+ .hero .eyebrow{font-size:10px}
+ .hero h1{font-size:48px}
+ .hero-note{font-size:9px}
+ .services-intro p{font-size:16px}
+ .detail-content h3{font-size:19px}
+ .contact-top>a{font-size:16px}
+ .area-links>a{font-size:18px}
+ nav.section-path{font-size:13px}
+}

@@ -1,0 +1,14 @@
+:root{--ease:cubic-bezier(.22,.61,.36,1);--dur-fast:200ms;--dur:600ms}
+body{animation:pageIn 500ms var(--ease) both;transition:opacity 250ms ease}body.is-leaving{opacity:0}
+@keyframes pageIn{from{opacity:0;transform:translateY(8px)}}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease);transition-delay:calc(var(--i,0)*100ms)}.reveal.is-visible{opacity:1;transform:none}
+.hero-inner>.eyebrow,.hero-inner>h1,.hero-inner>p,.hero-actions,.hero-note{opacity:0;animation:rise 700ms var(--ease) forwards}.hero-inner>h1{animation-delay:100ms}.hero-inner>p{animation-delay:200ms}.hero-actions{animation-delay:300ms}.hero-note{animation-delay:400ms}
+header{transition:background var(--dur-fast),box-shadow var(--dur-fast)}header.is-scrolled{background:rgb(255 255 255/.94);box-shadow:0 1px 12px rgb(0 0 0/.07);backdrop-filter:blur(8px)}
+header nav>a:not(.button)::after{transform:scaleX(0);transform-origin:left;transition:transform 300ms var(--ease)}header nav>a:not(.button):hover::after,header nav>a[aria-current]::after{transform:scaleX(1)}
+.service-card,.detail-card{transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),border-color var(--dur-fast)}.service-card:hover,.detail-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgb(0 0 0/.08);border-color:var(--gold)}
+.button{transition:background var(--dur-fast),transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast)}.button:hover{box-shadow:0 6px 16px rgb(0 0 0/.12)}.button:active{transform:translateY(0)}
+.about-image{overflow:hidden}.about-image img{transition:transform 700ms var(--ease)}.about-image:hover img{transform:scale(1.035)}
+.floating-chat{opacity:0;transform:translateY(16px);animation:rise 600ms 1.2s var(--ease) forwards;transition:background var(--dur-fast),transform var(--dur-fast) var(--ease)}.floating-chat:hover{transform:scale(1.05)}
+@media(max-width:760px){header nav{display:flex;visibility:hidden;opacity:0;transform:translateY(-10px);pointer-events:none;transition:opacity 250ms var(--ease),transform 250ms var(--ease),visibility 250ms}header nav.open{visibility:visible;opacity:1;transform:none;pointer-events:auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition-duration:1ms!important}.reveal{opacity:1;transform:none}.floating-chat{opacity:1;transform:none}body{opacity:1;transform:none}}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Administrar imágenes | Estudio Bardales</title><meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="admin.css"><script src="supabase-config.js" defer></script><script src="admin.js" defer></script>
+</head>
+<body>
+  <header class="admin-header"><div><p class="eyebrow">ESTUDIO BARDALES & ABOGADOS</p><h1>Administrar imágenes</h1><p>Acceso privado para actualizar las imágenes publicadas.</p></div><a href="index.html" target="_blank" rel="noopener">Ver sitio ↗</a></header>
+  <main>
+    <section id="login-panel" class="login-panel" aria-labelledby="login-title">
+      <p class="eyebrow">ACCESO RESTRINGIDO</p><h2 id="login-title">Iniciar sesión</h2><p>Ingresa con la cuenta del administrador del estudio.</p>
+      <form id="login-form"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="username" required><label for="password">Contraseña</label><input id="password" name="password" type="password" autocomplete="current-password" required><button type="submit">Ingresar</button><p id="login-status" class="status" role="status"></p></form>
+    </section>
+    <div id="admin-panel" hidden>
+      <section class="session-bar"><p>Sesión activa: <strong id="session-email"></strong></p><button id="logout" type="button">Cerrar sesión</button></section>
+      <section class="toolbar" aria-label="Filtros de imágenes"><label for="section-filter">Mostrar sección</label><select id="section-filter"><option value="all">Todas las secciones</option></select><span id="image-count"></span></section>
+      <section id="image-grid" class="image-grid" aria-live="polite"></section>
+    </div>
+  </main>
+  <template id="image-card-template"><article class="image-card"><div class="preview"><img alt=""></div><div class="card-content"><span class="section-name"></span><h2></h2><code></code><div class="actions"><label class="replace-button">Cambiar imagen<input type="file" accept="image/png,image/jpeg,image/webp" hidden></label></div><p class="card-status" role="status"></p></div></article></template>
+</body>
+</html>

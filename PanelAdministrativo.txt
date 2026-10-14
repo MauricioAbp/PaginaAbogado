@@ -1,0 +1,16 @@
+# PANEL ADMINISTRATIVO
+
+Proyecto independiente: Estudio Bardales / web-bardales
+Configuración autorizada para: mbarrigapozo9@gmail.com
+
+1. Publica nuevamente la carpeta web-bardales en el hosting.
+2. Abre /admin.html.
+3. Ingresa con mbarrigapozo9@gmail.com y la contraseña de esa cuenta.
+4. Elige una sección y pulsa "Cambiar imagen".
+
+La imagen se publica inmediatamente para todos los visitantes. Solo ese correo
+está autorizado por las políticas RLS. El panel no ofrece registro de usuarios
+ni roles adicionales.
+
+Para transferir el acceso posteriormente, cambia el correo autorizado en las
+tres políticas del bucket site-images.
